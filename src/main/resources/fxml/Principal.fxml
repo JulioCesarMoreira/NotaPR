@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="446.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PrincipalController">
+    <children>
+      <VBox alignment="TOP_CENTER" layoutX="-62.0" layoutY="-73.0" prefHeight="399.0" prefWidth="577.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="46.0" prefWidth="94.0" text="NF PR">
+               <font>
+                  <Font name="System Bold Italic" size="31.0" />
+               </font></Label>
+            <TabPane prefHeight="365.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Mes Empresa">
+                  <content>
+                    <fx:include source="MesEmpresa.fxml" />
+                  </content>
+                </Tab>
+                <Tab text="Empresa">
+                  <content>
+                    <fx:include source="Empresa.fxml" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
